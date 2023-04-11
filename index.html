@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>js</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/image/Unofficial_JavaScript_logo_2.svg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <!-- Start box setting -->
+    <div class="setting-box">
+        <div class="toggle-setting">
+            <i class="fa-solid fa-gear main-gear"></i>
+        </div>
+
+
+        <div class="setting-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#FF9800"></li>
+                    <li data-color="#E91E63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#03A9FA"></li>
+                    <li data-color="#4CAF50"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4 id="random-text">Random Backgrounds</h4>
+                <div class="random-background">
+                    <span class="Yes active" data-background="Yes">Yes</span>
+                    <span class="No" data-background="no">No</span>
+                </div>
+            </div>
+            <button class="reset-options" id="reset-options">
+                Reset Options
+            </button>
+        </div>
+    </div>
+    <!-- End box setting -->
+
+    <!-- Start nav bullets -->
+    <div class="nav-bullets">
+        <div class="bullets" data-section=".about-us">
+            <div class="tooltip">
+                About Us
+            </div>
+        </div>
+        <div class="bullets" data-section=".skills">
+            <div class="tooltip">
+                Our Skills
+            </div>
+        </div>
+        <div class="bullets" data-section=".gallery">
+            <div class="tooltip">
+                Our Gallery
+            </div>
+        </div>
+        <div class="bullets" data-section=".timeline">
+            <div class="tooltip">
+                Time line
+            </div>
+        </div>
+    </div>
+    <!-- END nav bullets -->
+
+    <!-- start landing page -->
+    <nav class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area">
+                <div class="logo">JS Design</div>
+                <ul class="links">
+                    <li><a href="#" data-section=".about-us" class="active"> About </a></li>
+                    <li><a href="#" data-section=".skills"> Skills </a></li>
+                    <li><a href="#" data-section=".gallery"> Gallery </a></li>
+                    <li><a href="#" data-section=".timeline"> Timeline</a></li>
+                    <li><a href="#" data-section=".feature"> Features</a></li>
+                    <li><a href="#" data-section=".testimonials"> Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="introdaction">
+            <h1>AM <span> WEB </span>Developer</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, suscipit? Libero, explicabo ad maiores
+                quod quidem odio. Ducimus illo saepe eaque inventore, modi maxime voluptatum obcaecati sunt possimus.
+                Ipsa, minus?</p>
+        </div>
+    </nav>
+    <!-- Start about us -->
+
+    <section class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nisi dolor nobis quo fugiat ad
+                    excepturi
+                    mollitia dolores voluptatibus, sapiente, provident temporibus, consequatur esse architecto iste
+                    adipisci
+                    neque aspernatur. Tenetur.</p>
+            </div>
+            <div class="image-box">
+                <img src="assets/image/illustration/1.jpg" alt="about us">
+            </div>
+        </div>
+    </section>
+
+    <div class="skills">
+        <h1>Our Skills</h1>
+        <div id="skills-section">
+            <div class="container2">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="92">
+                        <span>92%</span>
+                    </div>
+                </div>
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="85">
+                        <span>85%</span>
+                    </div>
+                </div>
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="82">
+                        <span>82%</span>
+                    </div>
+                </div>
+                <p>Node-js</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="86">
+                        <span>86%</span>
+                    </div>
+                </div>
+                <p>PHP</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="80">
+                        <span>80%</span>
+                    </div>
+                </div>
+                <p>SASS</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="95">
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End about us -->
+    </div>
+
+    <!-- End landing page -->
+
+    <!-- Start our gallery -->
+    <div class="gallery">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <div class="image-box">
+                <img src="assets/image/2.jpeg" alt="laptop1">
+                <img src="assets/image/illustration/1.jpg" alt="laptop2">
+                <img src="assets/image/3.webp" alt="laptop3">
+                <img src="assets/image/2.jpeg" alt="laptop4">
+                <img src="assets/image/6.jpg" alt="laptop5">
+                <img src="assets/image/illustration/3.jpg" alt="laptop6">
+                <img src="assets/image/2.jpeg" alt="laptop7">
+                <img src="assets/image/3.webp" alt="laptop8">
+                <img src="assets/image/illustration/6.jpg" alt="laptop9">
+                <img src="assets/image/illustration/7.jpg" alt="laptop10">
+            </div>
+        </div>
+    </div>
+    <!-- END our gallery -->
+
+    <!-- Start timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+
+                <div class="year">2018</div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam labore harum quam
+                            praesentium fuga architecto, voluptates nihil officiis consectetur iste ea enim, aliquam
+                            totam quas iure nemo. Ipsam, provident.</p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="right">
+                    <div class="content">
+                        <h3>TestingHeading</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit rem iusto pariatur
+                            corporis obcaecati optio ea! Ipsa `, sit omnis eveniet ad nemo ipsum, fugit
+                            quas saepe, culpa rem qui.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>TestingHeading</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit rem iusto pariatur
+                            corporis obcaecati optio ea! Ipsa `, sit omnis eveniet ad nemo ipsum, fugit
+                            quas saepe, culpa rem qui.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="right">
+                    <div class="content">
+                        <h3>TestingHeading</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit rem iusto pariatur
+                            corporis obcaecati optio ea! Ipsa dignissimos, sit omnis eveniet ad nemo ipsum, fugit
+                            quas saepe, culpa rem qui.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END timeline -->
+
+    <!-- Start Feature -->
+    <div class="feature">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="assets/Icons/10.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="feat-box">
+                <img src="assets/Icons/2.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="feat-box">
+                <img src="assets/Icons/3.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="feat-box">
+                <img src="assets/Icons/4.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="feat-box">
+                <img src="assets/Icons/5.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="feat-box">
+                <img src="assets/Icons/6.png" alt="Icons">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat ipsam voluptate qui cumque
+                    expedita .</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- END Feature -->
+
+    <!-- Start testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="ts-box">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit animi praesentium expedita nisi
+                    reprehenderit .</p>
+                <div class="person-info">
+                    <img src="assets/person.jpg" alt="img-person">
+                    <h4>Ahmed Saad</h4>
+                    <p>CEO Company</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit animi praesentium expedita nisi
+                    reprehenderit .</p>
+                <div class="person-info">
+                    <img src="assets/person.jpg" alt="img-person">
+                    <h4>Ahmed Saad</h4>
+                    <p>CEO Company</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit animi praesentium expedita nisi
+                    reprehenderit .</p>
+                <div class="person-info">
+                    <img src="assets/person.jpg" alt="img-person">
+                    <h4>Ahmed Saad</h4>
+                    <p>CEO Company</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- END testimonials -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
